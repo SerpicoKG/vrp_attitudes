@@ -1,9 +1,9 @@
 vRPani = {}
+local Tunnel = module("vrp", "lib/Tunnel")
+local Proxy = module("vrp", "lib/Proxy")
 Tunnel.bindInterface("vrp_attitudes",vRPani)
 Proxy.addInterface("vrp_attitudes",vRPani)
-Dserver = Tunnel.getInterface("vrp_attitudes","vrp_attitudes")
-vRPserver = Tunnel.getInterface("vRP","vrp_attitudes")
-vRP = Proxy.getInterface("vRP")
+
 
 
 -- MOVEMENT CLIPSET

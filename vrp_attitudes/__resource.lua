@@ -1,12 +1,9 @@
-
-description "vrp_animations"
---ui_page "ui/index.html"
+description "vrp_attitudes"
 
 dependency "vrp"
 
 client_scripts{ 
-  "lib/Tunnel.lua",
-  "lib/Proxy.lua",
+  "@vrp/lib/utils.lua",
   "client.lua"
 }
 
